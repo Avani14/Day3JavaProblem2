@@ -13,9 +13,10 @@ public class LineComparison {
 		System.out.println("Welcome to Line\r\n"
 				+ "Comparison Computation\r\n"
 				+ "Program on Master Branch");
-		float line1 = LengthCalculation.lengthOfLine(12.3f, 0.1f, 12.5f, 0.5f);
+	
+		float line1 = LengthCalculation.lengthOfLine((float)(Math.random()*10), (float)(Math.random()*10), (float)(Math.random()*10), (float)(Math.random()*10));
 		System.out.println("Length of line one is : "+line1);
-		float line2 = LengthCalculation.lengthOfLine(44.12f,4.0f,12.3f,0.5f);
+		float line2 = LengthCalculation.lengthOfLine((float)(Math.random()*10), (float)(Math.random()*10), (float)(Math.random()*10), (float)(Math.random()*10));
 		System.out.println("Length of line two is : "+line2);
 	}
 	
