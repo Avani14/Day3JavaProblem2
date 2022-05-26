@@ -14,6 +14,14 @@ class LengthCalculation{
 		 }
 		 else {
 			 System.out.println("The lines are not equal");
+			 if(x > y)
+			 {
+				 System.out.println("line one with length :"+x+" is greater than line two with lenght : "+y);
+			 }
+			 else if(y>x)
+			 {
+				 System.out.println("line two with length :"+y+" is greater than line one with lenght : "+x);
+			 }
 		 }
 		 
 	 }
