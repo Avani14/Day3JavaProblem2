@@ -4,6 +4,19 @@ class LengthCalculation{
 		 float ans = (float) Math.sqrt(Math.pow((x2 - x1),2)+Math.pow((y2- y1),2));
 		 return ans;
 	 }
+	 public static void checkingIfEqual(float l1, float l2)
+	 {
+		 Float x = new Float(l1);
+		 Float y = new Float(l2);
+		 if(x.equals(y))
+		 {
+			 System.out.println("The two lines are equal");
+		 }
+		 else {
+			 System.out.println("The lines are not equal");
+		 }
+		 
+	 }
 }
 public class LineComparison {
 	
@@ -13,10 +26,12 @@ public class LineComparison {
 		System.out.println("Welcome to Line\r\n"
 				+ "Comparison Computation\r\n"
 				+ "Program on Master Branch");
-		float line1 = LengthCalculation.lengthOfLine(12.3f, 0.1f, 12.5f, 0.5f);
+		float line1 = LengthCalculation.lengthOfLine((float)(Math.random()*10), (float)(Math.random()*10), (float)(Math.random()*10), (float)(Math.random()*10));
 		System.out.println("Length of line one is : "+line1);
-		float line2 = LengthCalculation.lengthOfLine(44.12f,4.0f,12.3f,0.5f);
+		float line2 = LengthCalculation.lengthOfLine((float)(Math.random()*10), (float)(Math.random()*10), (float)(Math.random()*10), (float)(Math.random()*10));
 		System.out.println("Length of line two is : "+line2);
+		
+		LengthCalculation.checkingIfEqual(line1, line2);
 	}
 	
 
